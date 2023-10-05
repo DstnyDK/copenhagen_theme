@@ -1914,11 +1914,17 @@ ul {
   font-weight: 600;
 }
 .sidenav-item {
+  border-radius: 4px;
+  color: $text_color;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.sidenav-item:hover, .sidenav-item.current-article {
+  background-color: $brand_color;
+  color: $brand_text_color;
+  text-decoration: none;
 }
 
 .recent-articles li,
@@ -4709,4 +4715,14 @@ html[dir=rtl] .notification-left-aligned {
 /***** Upload Dropzone *****/
 .upload-dropzone {
   border: 1px solid #87929D;
+}
+
+/** TOC box **/
+#toc-box {
+  /**float: right;**/
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+  padding: 10px;
+  border: 1px solid #efefef;
 }
